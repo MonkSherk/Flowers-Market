@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Cards</title>
+    <style>
+        /* General Reset and Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background: url('anime-background.jpg') no-repeat center center fixed;*/
+            background-size: cover;
+        }
+
+        /* Container for the Cards */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px; /* Space between cards */
+            padding: 20px;
+            max-width: 1200px; /* Optional max width for the container */
+            margin: auto; /* Center the container */
+        }
+
+        /* Card Styles */
+        .card {
+            background: rgba(255, 255, 255, 0.8); /* Slightly white background for card */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            overflow: hidden; /* Ensure children don't overflow */
+            transition: transform 0.2s ease; /* Smooth hover effect */
+        }
+
+        /* Header Section of the Card */
+        .header {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: #fff; /* White text */
+            text-align: center; /* Center the date */
+            padding: 10px 0; /* Padding around the date */
+        }
+
+        /* Card Body Styles */
+        .card-body {
+            position: relative; /* Position for overlay */
+        }
+
+        /* Character Image */
+        .character-image {
+            width: 100%; /* Full width of card */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Overlay for Character Details */
+        .overlay {
+            position: absolute; /* Position overlay over image */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left */
+            right: 0; /* Align to the right */
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: #fff; /* White text */
+            padding: 10px; /* Padding for text */
+            text-align: center; /* Center align text */
+        }
+
+        /* Character Name Styles */
+        .character-name {
+            font-weight: bold; /* Bold text for name */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Description Styles */
+        .description {
+            font-size: 14px; /* Smaller font for description */
+            margin: 5px 0 0; /* Margin for spacing */
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: translateY(-5px); /* Card pops up slightly */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="header">
+            <span class="date">2023-10-01</span>
+        </div>
+        <div class="card-body">
+            <img src="𝐊𝐢𝐫𝐢𝐬𝐡𝐢𝐦𝐚%20𝐓𝐨𝐮𝐤𝐚.jfif" alt="Anime Character" class="character-image">
+            <div class="overlay">
+                <h3 class="character-name">Character One</h3>
+                <p class="description">A brief description about Character One goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="header">
+            <span class="date">2023-10-02</span>
+        </div>
+        <div class="card-body">
+            <img src="Tokyo%20ghoul%20(Manga)%20(1).jfif" alt="Anime Character" class="character-image">
+            <div class="overlay">
+                <h3 class="character-name">Character Two</h3>
+                <p class="description">A brief description about Character Two goes here.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
